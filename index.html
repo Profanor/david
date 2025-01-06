@@ -115,19 +115,19 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
+								<form id="contactForm">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required />
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email" required />
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" required></textarea>
 										</div>
 									</div>
 									<ul class="actions">
@@ -136,12 +136,20 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>-->
 									<li><a href="https://www.linkedin.com/in/david-arinze-5766161a1/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/Profanor" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
 							</article>
+
+						<!-- Success Modal -->
+							<div id="successModal" class="modal">
+							<div class="modal-content">
+								<span class="close-button" id="closeModal">&times;</span>
+								<h2>Message Sent Successfully!</h2>
+								<p>Thank you for reaching out to us. We’ll get back to you shortly.</p>
+							</div>
+							</div>
+
 
 						<!-- Elements -->
 							<article id="elements">
@@ -398,6 +406,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+			<script src="./index.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
